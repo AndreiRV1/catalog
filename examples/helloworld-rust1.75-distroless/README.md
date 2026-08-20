@@ -3,6 +3,13 @@
 This directory contains a [Rust](https://www.rust-lang.org/) "Hello, World!" example running on Unikraft.
 It utilizes a Distroless container image to provide a minimal, secure root filesystem containing only the required runtime dependencies.
 
+## Distroless Build
+
+For this example's needs, the chosen distroless image provides:
+
+- The dynamic linker `ld-linux-x86-64`
+- The libraries `libc` and `libgcc_s`
+
 ## Set Up
 
 To run this example, [install Unikraft's companion command-line toolchain `kraft`](https://unikraft.org/docs/cli), clone this repository and `cd` into this directory.
